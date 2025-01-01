@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset styles for better control */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container untuk header dan form pencarian */
+.database {
+    background-color: #393939;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+/* Tombol tambah dan logout */
+.btn-add, .btn-edit, .btn-delete, .btn-cetak {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Tombol tambah data karyawan */
+.btn-add {
+    background-color: #28a745;
+}
+
+/* Tombol logout */
+.btn-add.logout {
+    background-color: #dc3545;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Hover effect for buttons */
+.btn-add:hover, .btn-edit:hover, .btn-delete:hover {
+    background-color: #d0d0d0;
+}
+
+/* Style untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #303030;
+    color: white;
+}
+
+/* Kolom pencarian dan tombol "Tambah Data Karyawan" di kiri atas */
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.form-container .btn-add {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+form input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-right: 8px; /* Menambahkan jarak antara input dan tombol cari */
+}
+
+form button {
+    padding: 8px 20px;
+    background-color: #303030;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #8e8e8e;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+    .database {
+        font-size: 20px;
+    }
+
+    .btn-add, .btn-edit, .btn-delete, .btn-cetak {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+
+    form input[type="text"] {
+        width: 200px;
+    }
+
+    .form-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-container form {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .btn-add.logout {
+        position: static;
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+}
+
+.btn-edit {
+    background-color: #ff9f05;
+    color: #303030;
+}
+
+.btn-delete {
+    background-color: #e4031a;
+    color: #ffffff;
+}
+
+.btn-cetak {
+    background-color: #2640c5;
+    
+}
+
