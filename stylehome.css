@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+:root {
+    --primary-color: #4d4d4d;
+    --secondary-color: #515151;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('img/IMG_6410.jpg') no-repeat center center/cover; /* Menambahkan gambar latar belakang */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center; /* Memastikan teks h1 terpusat */
+    align-items: center; /* Memastikan teks h1 terpusat secara vertikal */
+    text-align: center;
+}
+
+.hero .highlight {
+    color: #FFD700; /* Warna emas untuk nama perusahaan */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.8; /* Jarak antar baris agar lebih mudah dibaca */
+    max-width: 800px; /* Batas lebar maksimum agar teks tidak terlalu lebar */
+    text-align: center; /* Menyusun teks di tengah */
+    margin-left: auto; /* Membuat margin kiri otomatis */
+    margin-right: auto; /* Membuat margin kanan otomatis */
+    padding: 0 20px; /* Menambah jarak di sisi kiri dan kanan agar tidak terlalu rapat */
+}
+
+.hero .btn {
+    background-color: #fff;
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.hero .btn:hover {
+    background-color: #6e6e6e;
+    color: #fff;
+}
+
+/* Efek typing */
+.typing {
+    border-right: 2px solid #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blink 0.8s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #fff;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar .menu {
+        margin-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar .menu li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px; /* Tambahkan padding untuk lebih lega */
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Tombol di Navbar */
+.navbar .menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Jarak antar tombol */
+}
+
+.navbar .menu li {
+    margin: 0;
+}
+
+.navbar .menu a {
+    background-color: #0056b3; /* Biru lebih gelap */
+    color: white; /* Warna teks putih */
+    font-size: 1rem; /* Ukuran font */
+    font-weight: bold;
+    padding: 8px 15px; /* Padding untuk tampilan tombol */
+    text-decoration: none; /* Hilangkan underline */
+    border-radius: 5px; /* Sudut tombol membulat */
+    transition: all 0.3s ease; /* Efek transisi */
+}
+
+.navbar .menu a:hover, 
+.navbar .menu a.active {
+    background-color: #003060; /* Biru lebih gelap saat hover/aktif */
+    color: #ffffff; /* Tetap putih */
+    transform: scale(1.05); /* Sedikit membesar */
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Warna merah khusus untuk tombol Logout */
+.navbar .menu a.logout {
+    background-color: #f44336; /* Merah */
+    font-weight: bold;
+}
+
+.navbar .menu a.logout:hover {
+    background-color: #d32f2f; /* Merah lebih gelap saat hover */
+}

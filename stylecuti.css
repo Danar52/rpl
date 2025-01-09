@@ -263,3 +263,82 @@ button, .btn-add, .btn-cetak, .btn-submit, .btn-edit, .btn-delete {
 .navbar .menu a.logout:hover {
     background-color: #d32f2f; /* Merah lebih gelap saat hover */
 }
+
+/* Form Pengajuan Cuti */
+.cuti-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 20px;
+    background: #ffffff; /* Latar belakang putih */
+    border-radius: 10px; /* Sudut membulat */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+/* Form Group */
+.cuti-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.cuti-form .form-group label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333; /* Warna teks gelap */
+    margin-bottom: 8px;
+}
+
+.cuti-form .form-group input,
+.cuti-form .form-group textarea {
+    padding: 12px 15px; /* Padding untuk elemen input */
+    font-size: 1rem; /* Ukuran font */
+    border: 1px solid #ddd; /* Border abu-abu terang */
+    border-radius: 5px; /* Sudut membulat */
+    background-color: #f9f9f9; /* Warna latar belakang input */
+    color: #333; /* Warna teks */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Animasi saat fokus */
+}
+
+/* Efek Fokus */
+.cuti-form .form-group input:focus,
+.cuti-form .form-group textarea:focus {
+    border-color: #007bff; /* Border biru saat fokus */
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.2); /* Bayangan fokus */
+    outline: none; /* Hilangkan outline */
+}
+
+/* Textarea */
+.cuti-form .form-group textarea {
+    min-height: 100px; /* Tinggi minimum */
+    resize: vertical; /* Hanya bisa diubah tinggi */
+}
+
+/* Button Submit */
+.cuti-form .btn-submit {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff; /* Warna teks putih */
+    background-color: #0e8c00; /* Warna biru */
+    border: none;
+    border-radius: 5px; /* Sudut membulat */
+    cursor: pointer; /* Kursor berubah saat di-hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animasi hover */
+}
+
+.cuti-form .btn-submit:hover {
+    background-color: #17e700; /* Warna biru lebih gelap saat hover */
+    transform: translateY(-2px); /* Efek tombol naik */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Bayangan hover */
+}
+
+/* Form Container */
+.content-container {
+    max-width: 600px; /* Batas lebar form */
+    margin: 0 auto; /* Pusatkan form */
+    background: #f4f4f4; /* Warna latar belakang */
+    padding: 40px; /* Tambahkan padding */
+    border-radius: 15px; /* Sudut membulat untuk kontainer */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}

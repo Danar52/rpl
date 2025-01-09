@@ -1,0 +1,61 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px; /* Tambahkan padding untuk lebih lega */
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Tombol di Navbar */
+.navbar .menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Jarak antar tombol */
+}
+
+.navbar .menu li {
+    margin: 0;
+}
+
+.navbar .menu a {
+    background-color: #0056b3; /* Biru lebih gelap */
+    color: white; /* Warna teks putih */
+    font-size: 1rem; /* Ukuran font */
+    font-weight: bold;
+    padding: 8px 15px; /* Padding untuk tampilan tombol */
+    text-decoration: none; /* Hilangkan underline */
+    border-radius: 5px; /* Sudut tombol membulat */
+    transition: all 0.3s ease; /* Efek transisi */
+}
+
+.navbar .menu a:hover, 
+.navbar .menu a.active {
+    background-color: #003060; /* Biru lebih gelap saat hover/aktif */
+    color: #ffffff; /* Tetap putih */
+    transform: scale(1.05); /* Sedikit membesar */
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Warna merah khusus untuk tombol Logout */
+.navbar .menu a.logout {
+    background-color: #f44336; /* Merah */
+    font-weight: bold;
+}
+
+.navbar .menu a.logout:hover {
+    background-color: #d32f2f; /* Merah lebih gelap saat hover */
+}
